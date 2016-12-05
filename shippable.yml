@@ -2,8 +2,8 @@ language: none
 
 build:
   pre_ci_boot:
-    image_name: czhujer/docker-shippable-c6base
-    image_tag: v0.1
+    image_name: czhujer/shippable-c6base
+    image_tag: v1.0-1
     pull: true
   ci:
     - mkdir -p shippable/testresults
