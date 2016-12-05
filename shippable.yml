@@ -1,0 +1,17 @@
+language: none
+
+build:
+  pre_ci_boot:
+    image_name: czhujer/docker-shippable-c6base
+    image_tag: v0.1
+    pull: true
+  ci:
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    - pwd
+    - uname -r
+  post_ci:
+    - pwd
+    - ll -lh shippable/testresults
+    - ll -lh shippable/codecoverage
+
