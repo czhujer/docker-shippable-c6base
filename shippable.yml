@@ -12,6 +12,6 @@ build:
     - uname -r
   post_ci:
     - pwd
-    - ll -lh shippable/testresults
-    - ll -lh shippable/codecoverage
+    - ls -lh shippable/testresults
+    - ls -lh shippable/codecoverage
 
